@@ -14,20 +14,10 @@ export const Footer = () => {
               href={CONFIG.twitter}
               target="_blank"
               rel="noreferrer noopener"
-              className="font-medium text-white underline underline-offset-4"
+              className="font-medium text-black underline underline-offset-4 dark:text-white"
             >
               vinihvc
             </a>
-            . Highly inspired by{' '}
-            <a
-              href={CONFIG.shadcn}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="font-medium text-white underline underline-offset-4"
-            >
-              shadcn
-            </a>
-            .
           </p>
         </div>
       </div>

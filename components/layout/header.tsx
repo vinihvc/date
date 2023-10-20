@@ -12,7 +12,10 @@ export const Header = () => {
         <div>
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">
-              Next Boilerplate
+              {'Intl.DateTimeFormat ('}
+
+              <span className="text-rose-500">editor</span>
+              {')'}
             </span>
           </Link>
         </div>

@@ -5,3 +5,7 @@
 .dark {
   color-scheme: dark;
 }
+
+body {
+  overflow-y: scroll;
+}

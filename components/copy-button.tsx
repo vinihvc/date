@@ -5,8 +5,6 @@ import { useToast } from '@/hooks/use-toast'
 import { cn } from '@/utils/cn'
 import { Check, Copy } from 'lucide-react'
 
-import { ToastAction } from './ui/toast'
-
 type CopyButtonProps = {
   value: string
 } & React.HTMLAttributes<HTMLButtonElement>
@@ -29,7 +27,9 @@ export const CopyButton = ({ value, className, ...props }: CopyButtonProps) => {
   return (
     <button
       className={cn(
-        'relative z-20 inline-flex h-8 items-center justify-center rounded-md border-neutral-200 p-2 text-sm font-medium text-neutral-900 transition-all hover:bg-neutral-100 focus:outline-none dark:text-neutral-100 dark:hover:bg-neutral-800',
+        'relative z-20 inline-flex h-8 items-center justify-center ',
+        'rounded-md border-neutral-200 p-2 text-sm font-medium text-neutral-900 transition-all ',
+        'hover:bg-neutral-100 focus:outline-none dark:text-neutral-100 dark:hover:bg-neutral-800',
         className,
       )}
       onClick={() => {
@@ -38,7 +38,7 @@ export const CopyButton = ({ value, className, ...props }: CopyButtonProps) => {
 
         toast({
           title: 'Copied to clipboard!',
-          variant: 'default',
+          variant: 'success',
         })
       }}
       {...props}
